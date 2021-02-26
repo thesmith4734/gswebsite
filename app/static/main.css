@@ -15,25 +15,48 @@
     background-color: #111;
     color: rgb(41, 158, 187);
   }
+
+  .left:hover {
+    background: radial-gradient(ellipse farthest-corner, #000000,  #000000 75%, #299ebb);
+  }
   
   /* Control the right side */
   .right {
     right: 0;
-    background-color: rgb(41, 158, 187);
+    background-color: #299ebb;
     color: #111;
   }
   
+  .right:hover {
+    background: radial-gradient(ellipse farthest-corner, #299ebb,  #299ebb 75%, #000000);
+  }
+
   /* If you want the content centered horizontally and vertically */
-  .centered {
+  .centered_left {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: "Courier New", "Lucidia Console", Helvetica;
   }
   
+  .centered_right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   /* Style the image inside the centered container, if needed */
-  .centered img {
-    width: 150px;
+  .centered_left img {
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  .centered_right img {
+    width: 300px;
     border-radius: 50%;
   }
